@@ -2,17 +2,19 @@
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For mobile -->
     <title>Moose Run Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>🦌 Moose Run Game 🏃‍♂️</h1>
     <div class="hud">
-        GLMR: <span id="glmrCount">0</span> | Acorn: <span id="acornCount">0</span> | Key: <span id="keyCount">0</span> | Score: <span id="points">0</span>
+        GLMR: <span id="glmrCount">0</span> | Acorn: <span id="acornCount">0</span> | Key: <span id="keyCount">0</span> | Score: <span id="points">0</span> | High Score: <span id="highScore">0</span>
     </div>
     <button id="startBtn">Start Game</button>
     <canvas id="gameCanvas" width="800" height="400"></canvas>
-    <p>Press SPACE to Jump</p>
+    <button id="jumpBtn">Jump</button> <!-- At bottom -->
+    <p>Click/Tap Jump Button, SPACE, or Tap Screen to Jump</p>
     <script src="script.js"></script>
 </body>
 </html>

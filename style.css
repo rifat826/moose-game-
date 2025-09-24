@@ -1,18 +1,39 @@
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-    <meta charset="UTF-8">
-    <title>Moose Run Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>🦌 Moose Run Game 🏃‍♂️</h1>
-    <div class="hud">
-        GLMR: <span id="glmrCount">0</span> | Acorn: <span id="acornCount">0</span> | Key: <span id="keyCount">0</span> | Score: <span id="points">0</span>
-    </div>
-    <button id="startBtn">Start Game</button>
-    <canvas id="gameCanvas" width="800" height="400"></canvas>
-    <p>Press SPACE to Jump</p>
-    <script src="script.js"></script>
-</body>
-</html>
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #e6f7ff;
+    color: #111;
+    margin: 0;
+    padding: 0;
+}
+#gameCanvas {
+    border: 2px solid #333;
+    background: #a3d9ff;
+    display: block;
+    margin: 10px auto;
+}
+.hud {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+#startBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#jumpBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #ff4444; /* Red color for jump button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
